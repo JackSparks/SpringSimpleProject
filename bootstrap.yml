@@ -1,6 +1,4 @@
-spring:
-  application:
-    name: api-service
-  cloud:
-    config:
-      uri: http://localhost:8888  # Config Server URL
+message: "Hello from Config Server!"
+app:
+  name: "Simple Microservice"
+  version: "1.0.0"
