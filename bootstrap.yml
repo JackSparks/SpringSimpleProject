@@ -1,17 +1,6 @@
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/mydb
-    username: user
-    password: password
-
-  server:
-    port: 8080
-
+  application:
+    name: simple-microservice  # This must match the name used by the Config Server to look for the config file (e.g., 'microservice' in the Git repo)
   cloud:
     config:
-      uri: http://localhost:8888  # URI to the Config Server, it can be relative if on the same network
-
-# Custom properties for your microservice
-microservice:
-  name: "My Spring Microservice"
-  version: "1.0.0"
+      uri: http://localhost:8888  # URI for the Config Server, default is port 8888
