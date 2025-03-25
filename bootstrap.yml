@@ -4,3 +4,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888  # URI for the Config Server, default is port 8888
+message: "Hello from remote config!"
+app:
+  name: "Simple Microservice"
+  version: "1.0.0"
